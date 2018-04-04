@@ -24,11 +24,14 @@ import com.evrencoskun.tableviewsample2.tableview.model.RowHeaderModel;
 
 public class MyTableAdapter extends AbstractTableAdapter<ColumnHeaderModel, RowHeaderModel,
         CellModel> {
+    private static final int GENDER_TYPE = 1;
+    private static final int MONEY_TYPE = 2;
+    private Context m_jContext;
 
     public MyTableAdapter(Context p_jContext) {
         super(p_jContext);
+        m_jContext = p_jContext;
     }
-
 
     @Override
     public RecyclerView.ViewHolder onCreateCellViewHolder(ViewGroup parent, int viewType) {
@@ -162,7 +165,4 @@ public class MyTableAdapter extends AbstractTableAdapter<ColumnHeaderModel, RowH
          */
         return 0;
     }
-
-    private static final int GENDER_TYPE = 1;
-    private static final int MONEY_TYPE = 2;
 }

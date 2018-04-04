@@ -27,6 +27,11 @@ public class MyTableViewListener implements ITableViewListener {
     }
 
     @Override
+    public void onCellLongPressed(@NonNull RecyclerView.ViewHolder cellView, int column, int row) {
+
+    }
+
+    @Override
     public void onColumnHeaderClicked(@NonNull RecyclerView.ViewHolder p_jColumnHeaderView, int
             p_nXPosition) {
 
